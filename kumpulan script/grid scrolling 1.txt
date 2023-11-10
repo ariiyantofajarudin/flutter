@@ -1,0 +1,58 @@
+
+import 'package:flutter/material.dart';
+
+class ExtentGridView extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Grid View Construcors'),
+        centerTitle: true,
+      ),
+      body: Container(
+        child: GridView.extent(
+            maxCrossAxisExtent: 400.0,
+            crossAxisSpacing: 5,
+            mainAxisSpacing: 5,
+            // childAspectRatio: (1 / 1),
+            // addAutomaticKeepAlives: true,
+            // addRepaintBoundaries: true,
+            shrinkWrap: true,
+            padding: EdgeInsets.all(10.0),
+            children: <Widget>[
+              Container(
+                padding: EdgeInsets.all(8),
+                child: Text("He'd have you all unravel at the"),
+                color: Colors.teal[100],
+              ),
+              Container(
+                padding: EdgeInsets.all(8),
+                child: Text('Heed not the rabble'),
+                color: Colors.teal[200],
+              ),
+              Container(
+                padding: EdgeInsets.all(8),
+                child: Text('Sound of screams but the'),
+                color: Colors.teal[300],
+              ),
+              Container(
+                padding: EdgeInsets.all(8),
+                child: Text('Who scream'),
+                color: Colors.teal[400],
+              ),
+              Container(
+                padding: EdgeInsets.all(8),
+                child: Text('Revolution is coming...'),
+                color: Colors.teal[500],
+              ),
+              Container(
+                padding: EdgeInsets.all(8),
+                child: Text('Revolution, they...'),
+                color: Colors.teal[600],
+              ),
+            ]),
+      ),
+    );
+  }
+}
+view rawgrid_view_extent.dart hosted with ❤ by GitHub

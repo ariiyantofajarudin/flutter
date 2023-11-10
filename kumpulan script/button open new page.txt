@@ -1,0 +1,38 @@
+child: Padding(
+        padding: const EdgeInsets.all(15),
+        child: Row(
+          children: [
+            GFBorder(
+                radius: Radius.circular(30),
+                color: Color.fromARGB(255, 226, 0, 170),
+                dashedLine: const [1, 0],
+                strokeWidth: 2,
+                type: GFBorderType.circle,
+                padding: EdgeInsets.all(1),
+                child: CircleAvatar(
+                  radius: 25,
+                  backgroundImage: AssetImage(pp[index]),
+                )),
+            Column(
+              children: [
+                Text(
+                  friend[index],
+                  textAlign: TextAlign.left,
+                  style: const TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Text(
+                  current_chat[index],
+                  textAlign: TextAlign.left,
+                  style: const TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.normal,
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
